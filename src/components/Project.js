@@ -11,7 +11,7 @@ function Project() {
                         <Card.Body>
                             <Card.Title>Quatum Cryptography Simulation Game</Card.Title>
                             <Card.Text>
-                                The game is currently developing using HTML5, Bootstrap, CSS, and JavaScript.
+                                The game is written using HTML5, Bootstrap, CSS, and JavaScript.
                             </Card.Text>
                         </Card.Body>
                     </Card>
