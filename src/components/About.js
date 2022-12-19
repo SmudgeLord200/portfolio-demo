@@ -13,9 +13,8 @@ function About() {
                 <Col sm={9} md={10} lg={{ span: 5, offset: 1 }} style={{ paddingTop: "15px" }}>
                     <h4>Hello I am Ho Tsz Lam Nicole</h4>
                     <h5 style={{ fontWeight: "300" }}>
-                        I am a student studying Information Security at The Hong Kong Polytechnic Uuniversity.
-                        I am currently working on my Final Year Project (FYP) to develop a Quantum Cryptography simulation game using HTML5, Bootstrap, CSS, and JavaScript. 
-                        When I am not doing it, I will probably listen to music and watch YouTube videos. 
+                        I am an Information Security graduate from The Hong Kong Polytechnic Uuniversity.
+                        I am now a full-time web front-end developer. 
                     </h5>
                 </Col>
             </Row>
