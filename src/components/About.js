@@ -11,10 +11,10 @@ function About() {
                     <img src={web_developer} alt="Web Developer" style={{ width: "100%", height: "100%", borderRadius: "5px", paddingBottom: "15px" }} />
                 </Col>
                 <Col sm={9} md={10} lg={{ span: 5, offset: 1 }} style={{ paddingTop: "15px" }}>
-                    <h4>Hello I am Ho Tsz Lam Nicole</h4>
+                    <h4>Hello I am Nicole</h4>
                     <h5 style={{ fontWeight: "300" }}>
                         I am an Information Security graduate from The Hong Kong Polytechnic Uuniversity.
-                        I am now a full-time web front-end developer. 
+                        I am now a full-time web front-end developer. I love listening to music. 
                     </h5>
                 </Col>
             </Row>
