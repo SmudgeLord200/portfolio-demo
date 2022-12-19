@@ -5,7 +5,7 @@ function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-4" sticky="top">
             <Container>
-                <Navbar.Brand href="#home" style={{fontSize: "24px", borderRight: "2px solid grey", padding: "0 15px"}}>Ho Tsz Lam, Nicole</Navbar.Brand>
+                <Navbar.Brand href="#home" style={{fontSize: "24px", borderRight: "2px solid grey", padding: "0 15px"}}>Nicole</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
