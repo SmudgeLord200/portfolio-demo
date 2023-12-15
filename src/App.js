@@ -5,16 +5,23 @@ import About from './components/About';
 import Project from './components/Project';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material';
+import MainLayout from './components/MainLayout';
 
 function App() {
+  let theme = createTheme(); //TODO: change this
+  theme = responsiveFontSizes(theme);
+
   return (
-    <main>
-      <Header />
-      <About />
-      <Project />
-      <Skills />
-      <Contact />
-    </main>
+    <ThemeProvider theme={theme}>
+      {/* <MainLayout> */}
+        <Header />
+        <About />
+        <Project />
+        <Skills />
+        <Contact />
+      {/* </MainLayout> */}
+    </ThemeProvider>
   );
 }
 
