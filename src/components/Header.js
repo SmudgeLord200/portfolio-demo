@@ -14,6 +14,7 @@ const StyledToolBar = styled(Toolbar)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
+    backgroundColor: 'black'
 }));
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar)
@@ -23,7 +24,6 @@ function Header(props) {
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const { window } = props;
     const [mobileOpen, setMobileOpen] = useState(false);
-    const [openMenu, setOpenMenu] = useState(null);
     const container = window !== undefined ? () => window().document.body : undefined;
 
     const handleDrawerToggle = () => {
@@ -35,7 +35,14 @@ function Header(props) {
     }
 
     const drawer = (
-        <Box>ABC</Box>
+        //<Box>
+        <Stack direction="column" spacing={1}>
+            <Button variant='text' href="#about" onClick={() => closeDrawerButton()}>About</Button>
+            <Button variant='text' href="#projects" onClick={() => closeDrawerButton()}>Project</Button>
+            <Button variant="text" href="#skills" onClick={() => closeDrawerButton()}>Skills</Button>
+            <Button variant='text' href="#contact" onClick={() => closeDrawerButton()}>Contact</Button>
+        </Stack>
+        //</Box>
     )
 
     return (
@@ -46,17 +53,17 @@ function Header(props) {
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
-                        // onClick={() => onNavigate('/')}
+                        href="#"
                         sx={{
                             '&:hover': {
-                                backgroundColor: 'transparent'
+                                backgroundColor: 'transparent',
+                                color: 'blue'
                             }
                         }}
                     >
                         <Typography
                             variant="h6"
                             noWrap
-                            component="a"
                             sx={{
                                 mr: 2,
                                 fontFamily: 'monospace',
@@ -97,9 +104,10 @@ function Header(props) {
 
                     {!isMobile &&
                         <ButtonGroup variant='text'>
-                            <Button variant='contained' href="#about">About</Button>
-                            <Button variant='contained' href="#projects">Project</Button>
-                            <Button variant='contained' href="#contact">Contact</Button>
+                            <Button variant='text' href="#about">About</Button>
+                            <Button variant='text' href="#projects">Project</Button>
+                            <Button variant="text" href="#skills">Skills</Button>
+                            <Button variant='text' href="#contact">Contact</Button>
                         </ButtonGroup>
                     }
                 </StyledToolBar>

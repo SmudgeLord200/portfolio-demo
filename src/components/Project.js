@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Card, Container, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Container, Stack, Typography } from '@mui/material';
 
 function Project() {
     return (
-        <Container fluid id="projects" style={{ backgroundColor: "#717a82", padding: "20px" }}>
-            <h2 style={{ wdith: "100%", textAlign: "center", paddingTop: "10px", color: "white" }}>Project</h2>
+        <Container id="projects" style={{ backgroundColor: 'grey' }}>
+            <h2 style={{ wdith: "100%", textAlign: "center", paddingTop: "10px", color: "white" }}>Projects</h2>
             <Row style={{ justifyContent: "center", alignItems: "center", height: "100%" }}>
                 <Col sm={12} md={6} lg={4}>
                     <Card style={{ width: '100%' }}>
@@ -21,7 +22,7 @@ function Project() {
                         <Card.Body>
                             <Card.Title>GrandYuen</Card.Title>
                             <Card.Text>
-                                WordPress project for GrandYuen company, a construction company. 
+                                WordPress project for GrandYuen company, a construction company.
                             </Card.Text>
                             <Button href="https://grandyuen.site/" target="_blank" variant="success">Go to GrandYuen</Button>
                         </Card.Body>
@@ -32,7 +33,7 @@ function Project() {
                         <Card.Body>
                             <Card.Title>Panda Technology</Card.Title>
                             <Card.Text>
-                                WordPress project for Panda Technology, an IT company. 
+                                WordPress project for Panda Technology, an IT company.
                             </Card.Text>
                             <Button href="https://panda-technology.shop/" target="_blank" variant="warning">Go to Panda Technology</Button>
                         </Card.Body>
