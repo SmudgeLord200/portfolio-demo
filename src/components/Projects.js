@@ -82,7 +82,7 @@ function Projects() {
                         </Link>
                     </Grid>
                 </Grid>
-                <MoreButton variant='contained'>For More</MoreButton>
+                <MoreButton variant='contained' component="a" target="_blank" href="https://github.com/SmudgeLord200">For More</MoreButton>
             </Stack>
         </MyContainer>
     );
