@@ -24,7 +24,7 @@ function Skills() {
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
                         <Card>
                             <CardContent>
-                                <FaHtml5 style={{ width: '100%', height: '20vh', color: 'red' }} />
+                                <FaHtml5 style={{ width: '100%', height: '20vh', color: '#e34c26' }} />
                             </CardContent>
                         </Card>
                     </Grid>
@@ -38,28 +38,28 @@ function Skills() {
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
                         <Card>
                             <CardContent>
-                                <IoLogoJavascript style={{ width: '100%', height: '20vh', color: 'red' }} />
+                                <IoLogoJavascript style={{ width: '100%', height: '20vh', color: '#F0DB4F' }} />
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
                         <Card>
                             <CardContent>
-                                <FaReact style={{ width: '100%', height: '20vh', color: 'red' }} />
+                                <FaReact style={{ width: '100%', height: '20vh', color: '#09d3ac' }} />
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
                         <Card>
                             <CardContent>
-                                <SiMui style={{ width: '100%', height: '20vh', color: 'red' }} />
+                                <SiMui style={{ width: '100%', height: '20vh', color: '#66b2ff' }} />
                             </CardContent>
                         </Card>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
                         <Card>
                             <CardContent>
-                                <SiRedux style={{ width: '100%', height: '20vh', color: 'red' }} />
+                                <SiRedux style={{ width: '100%', height: '20vh', color: '#593d88' }} />
                             </CardContent>
                         </Card>
                     </Grid>

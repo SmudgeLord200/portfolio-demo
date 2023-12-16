@@ -1,14 +1,9 @@
 import React from 'react';
-// import { Navbar, Container, Nav, Button } from 'react-bootstrap';
-import { AppBar, Box, Button, ButtonGroup, ClickAwayListener, Divider, Drawer, IconButton, ListItemText, MenuItem, MenuList, Popper, Stack, Toolbar, Typography, useMediaQuery } from "@mui/material";
-// import { useNavigate } from "react-router-dom";
-import { useRef, useState } from "react";
-import LanguageIcon from '@mui/icons-material/Language';
-import AdbIcon from '@mui/icons-material/Adb';
+import { AppBar, Box, Button, ButtonGroup, Divider, Drawer, IconButton, Stack, Toolbar, Typography, useMediaQuery } from "@mui/material";
+import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from "@emotion/react";
 import styled from "@emotion/styled";
-import Icon from '@mui/material/Icon';
 
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
     display: "flex",
@@ -16,6 +11,20 @@ const StyledToolBar = styled(Toolbar)(({ theme }) => ({
     justifyContent: "space-around",
     backgroundColor: 'black'
 }));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+    color: '#fff',
+    '&:hover': {
+        color: '#484041'
+    }
+}))
+
+const StyledDrawerButton = styled(Button)(({ theme }) => ({
+    color: '#000',
+    '&:hover': {
+        color: '#484041'
+    },
+}))
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar)
 
@@ -35,14 +44,15 @@ function Header(props) {
     }
 
     const drawer = (
-        //<Box>
-        <Stack direction="column" spacing={1}>
-            <Button variant='text' href="#about" onClick={() => closeDrawerButton()}>About</Button>
-            <Button variant='text' href="#projects" onClick={() => closeDrawerButton()}>Project</Button>
-            <Button variant="text" href="#skills" onClick={() => closeDrawerButton()}>Skills</Button>
-            <Button variant='text' href="#contact" onClick={() => closeDrawerButton()}>Contact</Button>
-        </Stack>
-        //</Box>
+        <Box>
+            <Stack direction="column" spacing={2} alignItems={'center'} justifyContent={'center'} mt={3}>
+                <StyledDrawerButton variant='text' href="#about" onClick={() => closeDrawerButton()}>About</StyledDrawerButton>
+                <StyledDrawerButton variant='text' href="#experience" onClick={() => closeDrawerButton()}>Experience</StyledDrawerButton>
+                <StyledDrawerButton variant='text' href="#projects" onClick={() => closeDrawerButton()}>Projects</StyledDrawerButton>
+                <StyledDrawerButton variant="text" href="#skills" onClick={() => closeDrawerButton()}>Skills</StyledDrawerButton>
+                <StyledDrawerButton variant='text' href="#contact" onClick={() => closeDrawerButton()}>Contact</StyledDrawerButton>
+            </Stack>
+        </Box>
     )
 
     return (
@@ -57,7 +67,7 @@ function Header(props) {
                         sx={{
                             '&:hover': {
                                 backgroundColor: 'transparent',
-                                color: 'blue'
+                                color: '#434371'
                             }
                         }}
                     >
@@ -96,7 +106,7 @@ function Header(props) {
                                 ModalProps={{
                                     keepMounted: true, // Better open performance on mobile.
                                 }}
-                                sx={{ '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 300 }, }}
+                                sx={{ '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 200 }, }}
                             >
                                 {drawer}
                             </Drawer>
@@ -104,11 +114,11 @@ function Header(props) {
 
                     {!isMobile &&
                         <ButtonGroup variant='text'>
-                            <Button variant='text' href="#about">About</Button>
-                            <Button variant='text' href="#experience">Experience</Button>
-                            <Button variant='text' href="#projects">Project</Button>
-                            <Button variant="text" href="#skills">Skills</Button>
-                            <Button variant='text' href="#contact">Contact</Button>
+                            <StyledButton variant='text' href="#about">About</StyledButton>
+                            <StyledButton variant='text' href="#experience">Experience</StyledButton>
+                            <StyledButton variant='text' href="#projects">Project</StyledButton>
+                            <StyledButton variant="text" href="#skills">Skills</StyledButton>
+                            <StyledButton variant='text' href="#contact">Contact</StyledButton>
                         </ButtonGroup>
                     }
                 </StyledToolBar>

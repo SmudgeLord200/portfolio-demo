@@ -9,12 +9,13 @@ const MoreButton = styled(Button)(({ theme }) => ({
     backgroundColor: 'black',
     '&:hover': {
         backgroundColor: 'white',
-        color: 'black'
+        color: 'black',
+        transition: 'background-color 0.3s, color 0.3s', 
     }
 }));
 
-const MyContainer = styled(Container)(({theme}) => ({
-    backgroundColor: 'grey', 
+const MyContainer = styled(Container)(({ theme }) => ({
+    backgroundColor: 'grey',
     padding: '2.8rem'
 }))
 

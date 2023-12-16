@@ -1,11 +1,16 @@
 import React from 'react';
 import { Container, Grid, Stack, Typography, Link } from '@mui/material';
+import styled from '@emotion/styled';
 
-
+const MyContainer = styled(Container)(({ theme }) => ({
+    backgroundColor: "#343a40",
+    padding: '1rem',
+    color: 'white'
+}))
 
 function Contact() {
     return (
-        <Container id="contact" maxWidth={false} style={{ backgroundColor: "#343a40", padding: '1rem', color: 'white' }}>
+        <MyContainer id="contact" maxWidth={false}>
             <Stack direction="column" alignItems='center' justifyContent="center" spacing={1}>
                 <Typography variant='h4' textAlign={'center'}>Contact</Typography>
                 <Grid
@@ -26,7 +31,12 @@ function Contact() {
                             alignItems="center"
                             justifyContent="center"
                         >
-                            <i className="fab fa-linkedin-in" style={{ color: 'red' }}></i>
+                            <i
+                                className="fab fa-linkedin-in"
+                                style={{ color: '#fff', transition: 'color 0.3s' }}
+                                onMouseEnter={(e) => (e.target.style.color = '#0a66c2')}
+                                onMouseLeave={(e) => (e.target.style.color = '#fff')}
+                            />
                         </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
@@ -38,7 +48,12 @@ function Contact() {
                             alignItems="center"
                             justifyContent="center"
                         >
-                            <i className="fab fa-github"></i>
+                            <i
+                                className="fab fa-github"
+                                style={{ color: '#fff', transition: 'color 0.3s' }}
+                                onMouseEnter={(e) => (e.target.style.color = '#24292e')}
+                                onMouseLeave={(e) => (e.target.style.color = '#fff')}
+                            />
                         </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
@@ -50,12 +65,17 @@ function Contact() {
                             alignItems="center"
                             justifyContent="center"
                         >
-                            <i className="fab fa-codepen"></i>
+                            <i
+                                className="fab fa-codepen"
+                                style={{ color: '#fff', transition: 'color 0.3s' }}
+                                onMouseEnter={(e) => (e.target.style.color = '#000')}
+                                onMouseLeave={(e) => (e.target.style.color = '#fff')}
+                            />
                         </Link>
                     </Grid>
                 </Grid>
             </Stack>
-        </Container>
+        </MyContainer>
     );
 }
 
