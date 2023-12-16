@@ -116,7 +116,7 @@ function Header(props) {
                         <ButtonGroup variant='text'>
                             <StyledButton variant='text' href="#about">About</StyledButton>
                             <StyledButton variant='text' href="#experience">Experience</StyledButton>
-                            <StyledButton variant='text' href="#projects">Project</StyledButton>
+                            <StyledButton variant='text' href="#projects">Projects</StyledButton>
                             <StyledButton variant="text" href="#skills">Skills</StyledButton>
                             <StyledButton variant='text' href="#contact">Contact</StyledButton>
                         </ButtonGroup>
