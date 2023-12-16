@@ -1,32 +1,60 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
-import { Container, Grid, Stack, Typography } from '@mui/material';
-
-//https://www.linkedin.com/in/nicole-h-6773b021a
-//https://github.com/SmudgeLord200
+import { Container, Grid, Stack, Typography, Link } from '@mui/material';
 
 function Contact() {
     return (
-        <Container id="contact" maxWidth={false} style={{ backgroundColor: "#343a40", padding: '2rem' }}>
-            <Stack direction="column" alignItems='center' justifyContent="center">
-                <Typography variant='h4'>Contact Me</Typography>
+        <Container id="contact" maxWidth={false} style={{ backgroundColor: "#343a40", padding: '1rem', color: 'white' }}>
+            <Stack direction="column" alignItems='center' justifyContent="center" spacing={1}>
+                <Typography variant='h5' textAlign={'center'}>Contact</Typography>
                 <Grid
                     container
-                    spacing={0}
                     direction="row"
+                    spacing={2}
+                    display="flex"
                     justifyContent="center"
                     alignItems="center"
                     columns={{ xs: 2, sm: 8, md: 12, lg: 12, xl: 12 }}
                 >
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
-                        <Typography textAlign={"center"}>LinkedIn</Typography>
+                        <Link
+                            href="https://www.linkedin.com/in/nicole-h-6773b021a"
+                            target="_blank"
+                            underline="none"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                        >
+                            <i className="fab fa-linkedin-in"></i>
+                            {/* LinkedIn */}
+                        </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
-                        <Typography textAlign={"center"}>GitHub</Typography>
+                        <Link
+                            href="https://github.com/SmudgeLord200"
+                            target="_blank"
+                            underline="none"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                        >
+                            <i className="fab fa-github"></i>
+                            {/* GitHub */}
+                        </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
-                        <Typography textAlign={"center"}>CodePen</Typography>
+                        <Link
+                            href="https://codepen.io/smudgelord200"
+                            target="_blank"
+                            underline="none"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                        >
+                            <i className="fab fa-codepen"></i>
+                            {/* Code Pen */}
+                        </Link>
                     </Grid>
                 </Grid>
             </Stack>
