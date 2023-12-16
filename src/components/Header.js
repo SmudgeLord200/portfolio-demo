@@ -105,6 +105,7 @@ function Header(props) {
                     {!isMobile &&
                         <ButtonGroup variant='text'>
                             <Button variant='text' href="#about">About</Button>
+                            <Button variant='text' href="#experience">Experience</Button>
                             <Button variant='text' href="#projects">Project</Button>
                             <Button variant="text" href="#skills">Skills</Button>
                             <Button variant='text' href="#contact">Contact</Button>

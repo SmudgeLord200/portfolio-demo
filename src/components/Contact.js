@@ -1,13 +1,13 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { SocialIcon } from 'react-social-icons';
 import { Container, Grid, Stack, Typography, Link } from '@mui/material';
+
+
 
 function Contact() {
     return (
         <Container id="contact" maxWidth={false} style={{ backgroundColor: "#343a40", padding: '1rem', color: 'white' }}>
             <Stack direction="column" alignItems='center' justifyContent="center" spacing={1}>
-                <Typography variant='h5' textAlign={'center'}>Contact</Typography>
+                <Typography variant='h4' textAlign={'center'}>Contact</Typography>
                 <Grid
                     container
                     direction="row"
@@ -26,8 +26,7 @@ function Contact() {
                             alignItems="center"
                             justifyContent="center"
                         >
-                            <i className="fab fa-linkedin-in"></i>
-                            {/* LinkedIn */}
+                            <i className="fab fa-linkedin-in" style={{ color: 'red' }}></i>
                         </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
@@ -40,7 +39,6 @@ function Contact() {
                             justifyContent="center"
                         >
                             <i className="fab fa-github"></i>
-                            {/* GitHub */}
                         </Link>
                     </Grid>
                     <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
@@ -53,7 +51,6 @@ function Contact() {
                             justifyContent="center"
                         >
                             <i className="fab fa-codepen"></i>
-                            {/* Code Pen */}
                         </Link>
                     </Grid>
                 </Grid>

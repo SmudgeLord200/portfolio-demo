@@ -2,12 +2,27 @@ import React from 'react';
 import { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Link, Stack, Typography } from '@mui/material';
 import project_1 from '../images/project_1.png';
 import project_2 from '../images/project_2.png';
+import styled from '@emotion/styled';
+
+const MoreButton = styled(Button)(({ theme }) => ({
+    padding: '1rem',
+    backgroundColor: 'black',
+    '&:hover': {
+        backgroundColor: 'white',
+        color: 'black'
+    }
+}));
+
+const MyContainer = styled(Container)(({theme}) => ({
+    backgroundColor: 'grey', 
+    padding: '2.8rem'
+}))
 
 function Projects() {
     return (
-        <Container id="projects" style={{ backgroundColor: 'grey', padding: '2rem' }} maxWidth={false}>
-            <Stack direction="column" alignItems='center' justifyContent="center" spacing={2}>
-                <Typography variant='h5' textAlign={'center'}>Projects</Typography>
+        <MyContainer id="projects" maxWidth={false}>
+            <Stack direction="column" alignItems='center' justifyContent="center" spacing={3}>
+                <Typography variant='h4' textAlign={'center'} color="white">Projects</Typography>
                 <Grid
                     container
                     direction="row"
@@ -21,7 +36,7 @@ function Projects() {
                         <Card>
                             <CardContent>
                                 <Typography variant="h6">Tribute Website</Typography>
-                                <Typography variant="title1">I am currently building a tribute webiste to an actor, using React and Strapi...</Typography>
+                                <Typography variant="title1">I am currently developing a tribute webiste to an actor, using React and Strapi...</Typography>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -66,9 +81,9 @@ function Projects() {
                         </Link>
                     </Grid>
                 </Grid>
-                <Button variant='contained'>For More</Button>
+                <MoreButton variant='contained'>For More</MoreButton>
             </Stack>
-        </Container>
+        </MyContainer>
     );
 }
 

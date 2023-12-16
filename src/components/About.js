@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Col, Container, Row } from 'react-bootstrap';
 import web_developer from '../images/web_developer.jpg';
 import { Container, Stack, Typography } from '@mui/material';
 import styled from '@emotion/styled';

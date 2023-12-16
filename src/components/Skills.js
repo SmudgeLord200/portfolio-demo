@@ -1,42 +1,71 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import WordPress from '../images/WordPress.png';
-import web_development from '../images/web_development.png';
-import cybersecurity from '../images/cybersec.png';
-import javascript from '../images/javascript.png';
+import { Card, CardContent, Container, Grid, Stack, Typography } from '@mui/material';
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 function Skills() {
     return (
-        <Container fluid id="skills">
-            <h2 style={{wdith: "100%", textAlign: "center", paddingTop: "10px"}}>Skills</h2>
-            <Row style={{justifyContent: "center", alignItems: "center", height: "100%", marginBottom: "15px"}}>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div style={{ margin: "20px 0px",  display: "inline" }}>
-                        <img src={WordPress} alt="WordPress" style={{ height: "50px", witdth: "50px" }} />
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>WordPress</h4>
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div style={{ margin: "20px 0px", display: "inline"  }}>
-                        <img src={web_development} alt="Web Development" style={{ height: "50px", witdth: "50px" }} />
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Web Development</h4>
-                    </div>
-                </Col>
-            </Row>
-            <Row style={{justifyContent: "center", alignItems: "center", height: "100%", marginBottom: "20px"}}>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div style={{ margin: "20px 0px", display: "inline"  }}>
-                        <img src={cybersecurity} alt="Cybersecurity" style={{ height: "50px", witdth: "50px" }} />
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Cybersecurity</h4>
-                    </div>
-                </Col>
-                <Col sm={12} md={6} lg={6} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <div style={{ margin: "20px 0px", display: "inline"  }}>
-                        <img src={javascript} alt="JavaScript" style={{ height: "50px", witdth: "50px" }} />
-                        <h4 style={{display: 'inline-block', fontWeight: '300', margin: '0 10px'}}>Programming</h4>
-                    </div>
-                </Col>
-            </Row>
+        <Container id="skills" maxWidth={false} style={{ padding: '1rem' }}>
+            <Stack direction="column" alignItems='center' justifyContent="center" spacing={2}>
+                <Typography variant='h4' textAlign={'center'}>Skills</Typography>
+                <Grid
+                    container
+                    direction="row"
+                    spacing={2}
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    columns={{ xs: 2, sm: 8, md: 12, lg: 12, xl: 12 }}
+                >
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <FaHtml5 style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <FaCss3Alt style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <IoLogoJavascript style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <FaReact style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <SiMui style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} lg={4} xl={4}>
+                        <Card>
+                            <CardContent>
+                                <SiRedux style={{ width: '100%', height: '20vh', color: 'red' }} />
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
+                <Typography variant="subtitle1" textAlign={'center'}>And many more...</Typography>
+            </Stack>
         </Container >
     );
 }

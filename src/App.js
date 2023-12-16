@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { Fab } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import ScrollToTop from './components/ScrollToTop';
+import Experience from './components/Experience';
 
 const RootDiv = styled('div')({
   display: 'flex',
@@ -43,6 +44,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <Header />
           <About />
+          <Experience />
           <Projects />
           <Skills />
           <Contact />
