@@ -7,7 +7,7 @@ import styled from "@emotion/styled";
 const experience = [
     {
         date: 'Nov 2023 - Present',
-        title: 'Software Engineering/Web Developer',
+        title: 'Software Engineer/Web Developer',
         subtitle: 'London, United Kingdom',
         style: '#2196f3',
         focus: true,
