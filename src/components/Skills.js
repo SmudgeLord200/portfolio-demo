@@ -9,7 +9,7 @@ import { SiRedux } from "react-icons/si";
 
 function Skills() {
     return (
-        <Container id="skills" maxWidth={false} style={{ padding: '1rem' }}>
+        <Container id="skills" maxWidth={false} style={{ padding: '2.8rem' }}>
             <Stack direction="column" alignItems='center' justifyContent="center" spacing={2}>
                 <Typography variant='h4' textAlign={'center'}>Skills</Typography>
                 <Grid

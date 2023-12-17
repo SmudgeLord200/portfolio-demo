@@ -7,7 +7,7 @@ import styled from "@emotion/styled";
 const experience = [
     {
         date: 'Nov 2023 - Present',
-        title: 'Software Engineer/Web Developer',
+        title: 'Software Engineer',
         subtitle: 'London, United Kingdom',
         style: '#2196f3',
         focus: true,
@@ -16,18 +16,18 @@ const experience = [
     {
         date: 'Dec 2022 - Sept 2023',
         title: 'Software Engineer (Programming)',
-        subtitle: 'Kuwn Tong, Hong Kong',
+        subtitle: 'Kwun Tong, Hong Kong',
         description: 'Web Development using React, Python, MongoDB'
     },
     {
         date: 'Sept 2022 - Dec 2022',
         title: 'Software Developer',
-        subtitle: 'Kuwn Tong, Hong Kong',
+        subtitle: 'Kwun Tong, Hong Kong',
         description: 'App Development using Mule 4'
     },
     {
         date: 'Aug 2021 - Oct 2021',
-        title: 'Software Developer Intern',
+        title: 'Web Developer Intern',
         subtitle: 'San Po Kong, Hong Kong',
         description: 'Web Development using WordPress'
     },
