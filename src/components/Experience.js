@@ -5,14 +5,14 @@ import { MdComputer } from "react-icons/md";
 import styled from "@emotion/styled";
 
 const experience = [
-    {
-        date: 'Nov 2023 - Present',
-        title: 'Software Engineer',
-        subtitle: 'London, United Kingdom',
-        style: '#2196f3',
-        focus: true,
-        description: 'Mobile Apps Development using React Native, Flutter'
-    },
+    // {
+    //     date: 'Nov 2023 - Present',
+    //     title: 'Software Engineer',
+    //     subtitle: 'London, United Kingdom',
+    //     style: '#2196f3',
+    //     focus: true,
+    //     description: 'Mobile Apps Development using React Native, Flutter'
+    // },
     {
         date: 'Dec 2022 - Sept 2023',
         title: 'Software Engineer (Programming)',
