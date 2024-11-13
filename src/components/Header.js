@@ -46,7 +46,7 @@ function Header(props) {
     const drawer = (
         <Box>
             <Stack direction="column" spacing={2} alignItems={'center'} justifyContent={'center'} mt={3}>
-                <StyledDrawerButton variant='text' href="#about" onClick={() => closeDrawerButton()}>About</StyledDrawerButton>
+                <StyledDrawerButton variant='text' href="#introduction" onClick={() => closeDrawerButton()}>About</StyledDrawerButton>
                 <StyledDrawerButton variant='text' href="#experience" onClick={() => closeDrawerButton()}>Experience</StyledDrawerButton>
                 <StyledDrawerButton variant='text' href="#projects" onClick={() => closeDrawerButton()}>Projects</StyledDrawerButton>
                 <StyledDrawerButton variant="text" href="#skills" onClick={() => closeDrawerButton()}>Skills</StyledDrawerButton>
@@ -114,7 +114,7 @@ function Header(props) {
 
                     {!isMobile &&
                         <ButtonGroup variant='text'>
-                            <StyledButton variant='text' href="#about">About</StyledButton>
+                            <StyledButton variant='text' href="#introduction">About</StyledButton>
                             <StyledButton variant='text' href="#experience">Experience</StyledButton>
                             <StyledButton variant='text' href="#projects">Projects</StyledButton>
                             <StyledButton variant="text" href="#skills">Skills</StyledButton>
