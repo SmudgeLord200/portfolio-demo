@@ -28,6 +28,7 @@ import { FaWordpress } from "react-icons/fa";
 import { FaWix } from "react-icons/fa";
 import { TbBrandFigma } from "react-icons/tb";
 import { BiLogoCPlusPlus } from "react-icons/bi";
+import { FaJava } from "react-icons/fa";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import styled from "@emotion/styled";
 
@@ -129,6 +130,11 @@ const mySkills = [
         icon: <BiLogoCPlusPlus />,
         color: "#5E97D0",
       },
+      {
+        name: "Java",
+        icon: <FaJava />,
+        color: "#5382a1",
+      },
     ],
   },
 ];
@@ -163,8 +169,8 @@ function Skills() {
                     <Card>
                       <Avatar
                         sx={{
-                          width: 74,
-                          height: 74,
+                          width: "100%",
+                          height: "100%",
                           margin: "auto",
                           marginTop: 2,
                           color: s.color,

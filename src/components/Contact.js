@@ -35,35 +35,36 @@ function Contact() {
         <Typography variant="h4" textAlign={"center"}>
           Contact
         </Typography>
-        <Grid
-          container
-          direction="row"
-          spacing={2}
+        <Stack
+          direction={{
+            xs: "column",
+            sm: "row",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          }}
           display="flex"
-          justifyContent="center"
           alignItems="center"
-          columns={{ xs: 2, sm: 8, md: 12, lg: 12, xl: 12 }}
+          justifyContent="space-between"
+          spacing={2}
+          // sx={{ width: "80%" }}
         >
           {socialLinks.map((social, index) => (
-            <Grid item key={index} xs={2} sm={2} md={4} lg={4} xl={4}>
-              <Link
-                href={social.href}
-                target="_blank"
-                underline="none"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <i
-                  className={social.className}
-                  style={{ color: "#fff", transition: "color 0.3s" }}
-                  onMouseEnter={(e) => (e.target.style.color = "#0a66c2")}
-                  onMouseLeave={(e) => (e.target.style.color = "#fff")}
-                />
-              </Link>
-            </Grid>
+            <Link
+              key={index}
+              href={social.href}
+              target="_blank"
+              underline="none"
+            >
+              <i
+                className={social.className}
+                style={{ color: "#fff", transition: "color 0.3s" }}
+                onMouseEnter={(e) => (e.target.style.color = "#0a66c2")}
+                onMouseLeave={(e) => (e.target.style.color = "#fff")}
+              />
+            </Link>
           ))}
-        </Grid>
+        </Stack>
       </Stack>
     </MyContainer>
   );
