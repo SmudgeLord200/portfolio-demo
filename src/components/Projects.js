@@ -85,9 +85,12 @@ function Projects() {
                 <Card>
                   <CardMedia
                     component="img"
-                    width="100%"
-                    height="100%"
                     image={p.image}
+                    sx={{
+                      width: "100%",
+                      height: "50vh",
+                      objectFit: "cover",
+                    }}
                   />
                   <CardContent>
                     <Typography variant="h6">{p.title}</Typography>
