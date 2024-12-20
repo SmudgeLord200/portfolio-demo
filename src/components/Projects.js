@@ -41,10 +41,10 @@ const projects = [
       "A Hackathon group project scrapping Hackathon sponsor data from DevPost using React, Material UI, Python",
   },
   {
-    href: "https://smudgelord200.github.io/http-get-app/",
+    href: "https://smudgelord200.github.io/http-get-weather-app",
     image: project_1,
     title: "HTTP GET Weather App",
-    subtitle: "A weather app using React, TypeScript, Material UI, Weather API",
+    subtitle: "A weather app using React, TypeScript, Material UI, OpenWeather API, Vite",
   },
   {
     href: "https://codepen.io/smudgelord200/full/rNPOaBp",
