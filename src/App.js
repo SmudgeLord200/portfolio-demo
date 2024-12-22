@@ -29,7 +29,7 @@ const ContentDiv = styled("div")({
 });
 
 function App() {
-  let theme = createTheme(); //TODO: change this
+  let theme = createTheme(); //add custom theme if you like
   theme = responsiveFontSizes(theme);
   const [scrollTarget, setScrollTarget] = useState(undefined);
 

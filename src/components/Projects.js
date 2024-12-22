@@ -105,7 +105,7 @@ function Projects() {
           variant="contained"
           component="a"
           target="_blank"
-          href="https://codepen.io/smudgelord200"
+          href="https://github.com/SmudgeLord200"
         >
           For More
         </MoreButton>

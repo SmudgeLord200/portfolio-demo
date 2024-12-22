@@ -29,6 +29,8 @@ import { FaWix } from "react-icons/fa";
 import { TbBrandFigma } from "react-icons/tb";
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { FaJava } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiVitess } from "react-icons/si";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import styled from "@emotion/styled";
 
@@ -51,6 +53,11 @@ const mySkills = [
         color: "#F0DB4F",
       },
       {
+        name: "TypeScript",
+        icon: <SiTypescript />,
+        color: "#007ACC",
+      },
+      {
         name: "Redux Toolkit",
         icon: <SiRedux />,
         color: "#BA8FFF",
@@ -69,6 +76,11 @@ const mySkills = [
         name: "Material UI",
         icon: <SiMui />,
         color: "#757ce8",
+      },
+      {
+        name: "Vite",
+        icon: <SiVitess />,
+        color: "#41d1ff",
       },
     ],
   },
