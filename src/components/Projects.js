@@ -44,13 +44,15 @@ const projects = [
     href: "https://smudgelord200.github.io/http-get-weather-app",
     image: project_1,
     title: "HTTP GET Weather App",
-    subtitle: "A weather app using React, TypeScript, Material UI, OpenWeather API, Vite",
+    subtitle:
+      "A weather app using React, TypeScript, Material UI, OpenWeather API, Vite",
   },
   {
-    href: "#",
+    href: "",
     image: project_2,
     title: "Dashboard App",
-    subtitle: "A private dashboard app using React, TypeScript, Material UI, Recharts, Vite",
+    subtitle:
+      "A private dashboard app using React, TypeScript, Material UI, Recharts, Vite",
   },
 ];
 
@@ -78,9 +80,9 @@ function Projects() {
           {projects.map((p, index) => (
             <Grid item key={index} xs={2} sm={4} md={4} lg={4} xl={4}>
               <Link
-                href={p.href}
+                href={p.href || undefined}
                 underline="none"
-                target="_blank"
+                target={p.href ? "_blank" : undefined}
               >
                 <Card>
                   <CardMedia
