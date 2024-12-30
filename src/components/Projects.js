@@ -47,10 +47,10 @@ const projects = [
     subtitle: "A weather app using React, TypeScript, Material UI, OpenWeather API, Vite",
   },
   {
-    href: "https://codepen.io/smudgelord200/full/rNPOaBp",
+    href: "#",
     image: project_2,
-    title: "Random Quote Machine",
-    subtitle: "A freeCodeCamp project using React, JavaScript, HTML, CSS",
+    title: "Dashboard App",
+    subtitle: "A private dashboard app using React, TypeScript, Material UI, Recharts, Vite",
   },
 ];
 
