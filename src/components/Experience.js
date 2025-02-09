@@ -9,7 +9,7 @@ import styled from "@emotion/styled";
 
 const experience = [
   {
-    date: "Nov 2023 - Present",
+    date: "Nov 2023 - Dec 2024",
     title: "Software Engineer",
     subtitle: "EtherSec, London, United Kingdom",
     description: "Technical discussion on warehouse management system",
