@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, useTheme, alpha, IconButton, Stack } from "@mui/material";
+import { Box, Button, useTheme, alpha, IconButton } from "@mui/material";
 import ProjectCard from "../ui/Card/ProjectCard";
 import { Code, KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from "@mui/icons-material";
 import { MAX_PROJECTS_STATIC_GRID, PROJECTS_DATA, PROJECTS_PER_PAGE_CAROUSEL } from "../../constants";
