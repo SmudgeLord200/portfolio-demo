@@ -154,6 +154,9 @@ export const StyledProjectCard = styled(Card)(({ }) => ({
         transform: 'scale(1.01)',
         boxShadow: '0 12px 30px -5px rgba(0, 0, 0, 0.2), 0 10px 12px -6px rgba(0, 0, 0, 0.1)',
     },
+    height: '100%', 
+    display: 'flex', 
+    flexDirection: 'column', 
 }));
 
 // Skills

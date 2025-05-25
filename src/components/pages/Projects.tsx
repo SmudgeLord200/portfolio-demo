@@ -1,12 +1,20 @@
-import { Box, Button, useTheme, alpha } from "@mui/material";
+import { useState } from "react";
+import { Box, Button, useTheme, alpha, IconButton, Stack } from "@mui/material";
 import ProjectCard from "../ui/Card/ProjectCard";
-import { Code } from "@mui/icons-material";
-import { PROJECTS_DATA } from "../../constants";
+import { Code, KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from "@mui/icons-material";
+import { MAX_PROJECTS_STATIC_GRID, PROJECTS_DATA, PROJECTS_PER_PAGE_CAROUSEL } from "../../constants";
 import { StyledBody, StyledHeading } from "../ui/StyledComponents";
 import AnimateWrapper from "../ui/AnimateWrapper";
 
 const Projects = () => {
   const theme = useTheme();
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const numProjects = PROJECTS_DATA.length;
+  const totalPages = Math.ceil(numProjects / PROJECTS_PER_PAGE_CAROUSEL);
+
+  const projectsToDisplayInCarousel = PROJECTS_DATA.slice(currentPage * PROJECTS_PER_PAGE_CAROUSEL, (currentPage + 1) * PROJECTS_PER_PAGE_CAROUSEL);
+
   return (
     <AnimateWrapper key="project">
       <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
@@ -20,15 +28,53 @@ const Projects = () => {
 
         <Box
           sx={{
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr' },
-            gap: 6,
-            p: 3,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%',
           }}
         >
-          {PROJECTS_DATA.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
+          {/* Navigation Buttons */}
+          {(numProjects > MAX_PROJECTS_STATIC_GRID) &&
+            <IconButton
+              onClick={() => setCurrentPage(p => Math.max(0, p - 1))}
+              disabled={currentPage === 0}
+              aria-label="previous projects page"
+              sx={{ mx: 1 }}
+            >
+              <KeyboardArrowLeftOutlined />
+            </IconButton>
+          }
+
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: { xs: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr' },
+              gap: 6,
+              p: 3,
+              width: '100%',
+            }}
+          >
+            {(numProjects <= MAX_PROJECTS_STATIC_GRID ? PROJECTS_DATA : projectsToDisplayInCarousel).map((project) => (
+              <ProjectCard
+                key={project.title}
+                project={project}
+              />
+            ))}
+          </Box>
+
+          {/* Navigation Buttons */}
+          {(numProjects > MAX_PROJECTS_STATIC_GRID) &&
+            <IconButton
+              onClick={() => setCurrentPage(p => Math.min(totalPages - 1, p + 1))}
+              disabled={currentPage >= totalPages - 1}
+              aria-label="next projects page"
+              sx={{ mx: 1 }}
+            >
+              <KeyboardArrowRightOutlined />
+            </IconButton>
+          }
         </Box>
 
         <Button

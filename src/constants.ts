@@ -1,8 +1,10 @@
 import type { ExperienceItem, ProjectItem, SKillsItem } from "./type";
-// import project_1 from "./assets/project_1.png";
-import project_2 from "./assets/project_2.png";
-import project_3 from "./assets/project_3.png";
-import project_4 from "./assets/project_4.png";
+import WeatherApp from "./assets/WeatherApp.png";
+import ResDashboardApp from "./assets/ResDashboardApp.png";
+import HackathonApp from "./assets/HackathonApp.png";
+import MiniDashboardApp from "./assets/MiniDashboardApp.png";
+import NewsGuardAI from "./assets/NewsGuardAI.png";
+import WebScraper from "./assets/WebScraper.png";
 
 export const DRAWER_WIDTH = 240
 
@@ -59,32 +61,46 @@ export const SKILLS_DATA: SKillsItem[] = [
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
-    title: 'Web Scraper',
+    title: 'Fund Your Hack',
     description: 'A Hackathon group project scrapping Hackathon sponsor data from DevPost using React, Material UI, Python.',
     technologies: ['React', 'Matierial UI', 'JavaScript', 'Python'],
     link: 'https://smudgelord200.github.io/sponsorship-web-scraper-2/',
-    image: project_3,
-  },
-  // {
-  //   title: 'HTTP GET Weather App',
-  //   description: 'A weather app using React, TypeScript, Material UI, OpenWeather API, Vite.',
-  //   technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'OpenWeather API', 'Vite'],
-  //   link: 'https://smudgelord200.github.io/http-get-weather-app',
-  //   image: project_1,
-  // },
-  {
-    title: 'Restaurant Dashboard App',
-    description: 'A dashboard app displaying restaurant statistics using React, TypeScript, Material UI, Vite.',
-    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite'],
-    link: 'https://github.com/SmudgeLord200/dashboard-app',
-    image: project_2,
+    image: HackathonApp,
   },
   {
     title: 'Mini Dashboard App',
     description: 'A mini dashboard app displaying sensor readings using React, TypeScript, Material UI, Vite, faker, Vitest.',
-    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'Vitest', 'faker'],
+    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'Vitest', 'Faker'],
     link: 'https://smudgelord200.github.io/mini-dashboard',
-    image: project_4,
+    image: MiniDashboardApp,
+  },
+  {
+    title: 'NewsGuard AI',
+    description: 'A full-stack service that analyzes news articles from URLs using NLP models to provide insights like summarization, sentiment, bias, topic, and named entity recognition.',
+    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'Vitest', 'Python', 'FastAPI', 'Pytest'],
+    link: 'https://github.com/SmudgeLord200/newsguard-ai',
+    image: NewsGuardAI,
+  },
+  {
+    title: 'CB Web Scraper',
+    description: 'A backend service that scrapes various websites to find events (talks, screenings, Q&As, etc.) in London and beyond that involve Cate Blanchett using machine learning.',
+    technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Requests', 'Yagmail', 'Spacy'],
+    link: 'https://github.com/SmudgeLord200/cb_web_scraper',
+    image: WebScraper,
+  },
+  {
+    title: 'Restaurant Dashboard App',
+    description: 'A dashboard app displaying restaurant statistics using React, TypeScript, Material UI, Vite.',
+    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'WebSocket'],
+    link: 'https://github.com/SmudgeLord200/dashboard-app',
+    image: ResDashboardApp,
+  },
+  {
+    title: 'HTTP GET Weather App',
+    description: 'A weather app using React, TypeScript, Material UI, OpenWeather API, Vite.',
+    technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'OpenWeather API', 'Vite'],
+    link: 'https://smudgelord200.github.io/http-get-weather-app',
+    image: WeatherApp,
   },
 ];
 
@@ -104,3 +120,6 @@ export const LISTITEM_VARIANTS = {
   hidden: { opacity: 0, x: -10 },
   visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
 };
+
+export const MAX_PROJECTS_STATIC_GRID = 3;
+export const PROJECTS_PER_PAGE_CAROUSEL = 3;
