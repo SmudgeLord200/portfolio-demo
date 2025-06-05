@@ -3,7 +3,7 @@ import WeatherApp from "./assets/WeatherApp.png";
 import ResDashboardApp from "./assets/ResDashboardApp.png";
 import HackathonApp from "./assets/HackathonApp.png";
 import MiniDashboardApp from "./assets/MiniDashboardApp.png";
-import NewsGuardAI from "./assets/NewsGuardAI.png";
+import ClickbaitandSwitchAI from "./assets/ClickbaitandSwitchAI.png";
 import WebScraper from "./assets/WebScraper.png";
 
 export const DRAWER_WIDTH = 240
@@ -75,11 +75,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     image: MiniDashboardApp,
   },
   {
-    title: 'NewsGuard AI',
+    title: 'Clickbait & Switch AI',
     description: 'A full-stack service that analyzes news articles from URLs using NLP models to provide insights like summarization, sentiment, bias, topic, and named entity recognition.',
     technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'Vitest', 'Python', 'FastAPI', 'Pytest'],
-    link: 'https://github.com/SmudgeLord200/newsguard-ai',
-    image: NewsGuardAI,
+    link: 'https://github.com/SmudgeLord200/clickbait-and-switch-ai',
+    image: ClickbaitandSwitchAI,
   },
   {
     title: 'CB Web Scraper',
