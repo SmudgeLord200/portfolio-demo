@@ -15,7 +15,7 @@ export interface ProjectItem {
     image: string;
 }
 
-export interface SKillsItem {
+export interface SkillsItem {
     category: string;
     items: string[];
 }

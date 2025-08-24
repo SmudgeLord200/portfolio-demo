@@ -2,17 +2,17 @@ import Grid from "@mui/material/Grid";
 import SkillCard from "../ui/Card/SkillCard";
 import { MemoryOutlined, OfflineBoltOutlined } from "@mui/icons-material";
 import { SKILLS_DATA } from "../../constants";
-import { StyledBody, StyledBox, StyledHeading, StyledSkillsWrapper, StyledSkillsWrapperBox, StyledSKillsWrapperHeading } from "../ui/StyledComponents";
+import { StyledBody, StyledBox, StyledSkillsWrapper, StyledSkillsWrapperBox, StyledSKillsWrapperHeading, StyledTitle, StyledTitleBox } from "../ui/StyledComponents";
 import AnimateWrapper from "../ui/AnimateWrapper";
 
 const Skills = () => {
   return (
     <AnimateWrapper key="skill">
       <StyledBox>
-        <StyledHeading variant="h3">
+        <StyledTitleBox>
           <OfflineBoltOutlined />
-          Skills
-        </StyledHeading>
+          <StyledTitle variant="h2">Skills</StyledTitle>
+        </StyledTitleBox>
         <StyledBody variant="body2">
           I'm always eager to learn and expand my skillset, but here are
           some of my key areas of expertise.

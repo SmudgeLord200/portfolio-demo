@@ -1,4 +1,4 @@
-import type { ExperienceItem, ProjectItem, SKillsItem } from "./type";
+import type { ExperienceItem, ProjectItem, SkillsItem } from "./type";
 import WeatherApp from "./assets/WeatherApp.png";
 import ResDashboardApp from "./assets/ResDashboardApp.png";
 import HackathonApp from "./assets/HackathonApp.png";
@@ -53,26 +53,26 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   },
 ];
 
-export const SKILLS_DATA: SKillsItem[] = [
-  { category: 'Front-End', items: ['React', 'TypeScript', 'JavaScript', 'Redux', 'HTML', 'CSS', 'MUI', 'Chakra UI'] },
-  { category: 'Back-End', items: ['Python', 'MongoDB', 'SQL', 'RESTful APIs'] },
-  { category: 'Tools', items: ['Git', 'Vite', 'VS Code', 'npm', 'Vitest', 'Docker', 'Figma', 'WordPress', 'Wix', 'Postman'] },
+export const SKILLS_DATA: SkillsItem[] = [
+  { category: 'Front-End', items: ['React', 'Vue', 'TypeScript', 'JavaScript', 'Redux', 'HTML', 'CSS', 'MUI', 'Chakra UI'] },
+  { category: 'Back-End', items: ['Python', 'ASP.NET', 'MongoDB', 'SQL', 'Microsoft SQL Server', 'RESTful APIs'] },
+  { category: 'Tools', items: ['Git', 'Vite', 'Azure Devops', 'VS Code', 'npm', 'Vitest', 'Docker', 'Figma', 'WordPress', 'Wix', 'Postman'] },
 ];
 
 export const PROJECTS_DATA: ProjectItem[] = [
-  {
-    title: 'Fund Your Hack',
-    description: 'A Hackathon group project scrapping Hackathon sponsor data from DevPost using React, Material UI, Python.',
-    technologies: ['React', 'Matierial UI', 'JavaScript', 'Python'],
-    link: 'https://smudgelord200.github.io/sponsorship-web-scraper-2/',
-    image: HackathonApp,
-  },
   {
     title: 'Mini Dashboard App',
     description: 'A mini dashboard app displaying sensor readings using React, TypeScript, Material UI, Vite, faker, Vitest.',
     technologies: ['React', 'TypeScript', 'Matierial UI', 'JavaScript', 'Vite', 'Vitest', 'Faker'],
     link: 'https://smudgelord200.github.io/mini-dashboard',
     image: MiniDashboardApp,
+  },
+  {
+    title: 'CB Web Scraper',
+    description: 'A backend service that scrapes various websites to find events (talks, screenings, Q&As, etc.) in London and beyond that involve Cate Blanchett using machine learning.',
+    technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Requests', 'Yagmail', 'Spacy'],
+    link: 'https://github.com/SmudgeLord200/cb_web_scraper',
+    image: WebScraper,
   },
   {
     title: 'Clickbait & Switch AI',
@@ -82,11 +82,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     image: ClickbaitandSwitchAI,
   },
   {
-    title: 'CB Web Scraper',
-    description: 'A backend service that scrapes various websites to find events (talks, screenings, Q&As, etc.) in London and beyond that involve Cate Blanchett using machine learning.',
-    technologies: ['Python', 'BeautifulSoup', 'Selenium', 'Requests', 'Yagmail', 'Spacy'],
-    link: 'https://github.com/SmudgeLord200/cb_web_scraper',
-    image: WebScraper,
+    title: 'Fund Your Hack',
+    description: 'A Hackathon group project scrapping Hackathon sponsor data from DevPost using React, Material UI, Python.',
+    technologies: ['React', 'Matierial UI', 'JavaScript', 'Python'],
+    link: 'https://smudgelord200.github.io/sponsorship-web-scraper-2/',
+    image: HackathonApp,
   },
   {
     title: 'Restaurant Dashboard App',

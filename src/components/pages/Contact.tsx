@@ -1,17 +1,17 @@
 import { IconButton } from "@mui/material";
 import { GitHub, LinkedIn, LocalPostOfficeOutlined, PermContactCalendarOutlined } from "@mui/icons-material";
 import Grid from '@mui/material/Grid';
-import { StyledBody, StyledBox, StyledGridItem, StyledHeading } from "../ui/StyledComponents";
+import { StyledBody, StyledBox, StyledGridItem, StyledTitle, StyledTitleBox } from "../ui/StyledComponents";
 import AnimateWrapper from "../ui/AnimateWrapper";
 
 const Contact = () => {
   return (
     <AnimateWrapper key="contact">
       <StyledBox>
-        <StyledHeading variant="h2">
+        <StyledTitleBox>
           <PermContactCalendarOutlined />
-          Contact Me
-        </StyledHeading>
+          <StyledTitle variant="h2">Contact Me</StyledTitle>
+        </StyledTitleBox>
         <StyledBody variant="body1">
           Feel free to reach out to me via email or connect with me on
           social media. I'm always open to new opportunities and

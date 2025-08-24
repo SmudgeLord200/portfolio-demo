@@ -1,6 +1,6 @@
 import { GitHub, InfoOutline, InsertDriveFileOutlined, LinkedIn } from "@mui/icons-material";
 import { IconButton, Tooltip } from "@mui/material";
-import { StyledBody, StyledBox, StyledGridItem, StyledHeading } from "../ui/StyledComponents";
+import { StyledBody, StyledBox, StyledGridItem, StyledTitle, StyledTitleBox } from "../ui/StyledComponents";
 import Grid from '@mui/material/Grid';
 import CV from '../../assets/CV_Nicole_Ho.pdf';
 import AnimateWrapper from "../ui/AnimateWrapper";
@@ -9,10 +9,10 @@ const About = () => {
   return (
     <AnimateWrapper key="about">
       <StyledBox>
-        <StyledHeading variant="h3">
+        <StyledTitleBox>
           <InfoOutline />
-          About Me
-        </StyledHeading>
+          <StyledTitle variant="h2">About Me</StyledTitle>
+        </StyledTitleBox>
         <StyledBody variant="body2">
           An enthusiastic web developer with international working experience in multi-disciplinary sectors across Hong Kong and the UK.
           With a strong track record in frontend development and valuable backend experience.

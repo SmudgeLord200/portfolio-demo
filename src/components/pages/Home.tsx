@@ -10,6 +10,7 @@ const Home = () => {
           sx={{
             fontSize: { xs: '4rem', md: '6rem', lg: '7rem' },
             fontWeight: 'bold',
+            textAlign: 'center',
             color: 'transparent',
             backgroundClip: 'text',
             backgroundImage: 'linear-gradient(to right, #6ee7b7, #3b82f6)',

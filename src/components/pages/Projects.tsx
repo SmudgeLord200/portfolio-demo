@@ -3,7 +3,7 @@ import { Box, Button, useTheme, alpha, IconButton } from "@mui/material";
 import ProjectCard from "../ui/Card/ProjectCard";
 import { Code, KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from "@mui/icons-material";
 import { MAX_PROJECTS_STATIC_GRID, PROJECTS_DATA, PROJECTS_PER_PAGE_CAROUSEL } from "../../constants";
-import { StyledBody, StyledHeading } from "../ui/StyledComponents";
+import { StyledBody, StyledBox, StyledTitle, StyledTitleBox } from "../ui/StyledComponents";
 import AnimateWrapper from "../ui/AnimateWrapper";
 
 const Projects = () => {
@@ -17,11 +17,11 @@ const Projects = () => {
 
   return (
     <AnimateWrapper key="project">
-      <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-        <StyledHeading variant="h3">
+      <StyledBox>
+        <StyledTitleBox>
           <Code />
-          Projects
-        </StyledHeading>
+          <StyledTitle variant="h2">Projects</StyledTitle>
+        </StyledTitleBox>
         <StyledBody variant="body2" mt={3}>
           Here are some of the personal projects I've worked on.  You can view the code for each project on GitHub.
         </StyledBody>
@@ -120,7 +120,7 @@ const Projects = () => {
         >
           For more
         </Button>
-      </Box>
+      </StyledBox>
     </AnimateWrapper>
   );
 }

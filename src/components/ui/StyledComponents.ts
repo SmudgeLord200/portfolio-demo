@@ -19,7 +19,13 @@ export const StyledBox = styled(Box)(({ }) => ({
     padding: '32px',
 }))
 
-export const StyledHeading = styled(Typography)(({ theme }) => ({
+export const StyledTitleBox = styled(Typography)(({ }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '16px',
+}));
+
+export const StyledTitle = styled(Typography)(({ theme }) => ({
     fontSize: '2.2rem',
     [theme.breakpoints.up('md')]: {
         fontSize: '2.8rem',
@@ -29,9 +35,6 @@ export const StyledHeading = styled(Typography)(({ theme }) => ({
     },
     fontWeight: 'bold',
     color: 'text.primary',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '16px',
 }));
 
 export const StyledBody = styled(Typography)(({ theme }) => ({
@@ -154,9 +157,9 @@ export const StyledProjectCard = styled(Card)(({ }) => ({
         transform: 'scale(1.01)',
         boxShadow: '0 12px 30px -5px rgba(0, 0, 0, 0.2), 0 10px 12px -6px rgba(0, 0, 0, 0.1)',
     },
-    height: '100%', 
-    display: 'flex', 
-    flexDirection: 'column', 
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
 }));
 
 // Skills
